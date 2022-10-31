@@ -280,6 +280,146 @@ button{
     
 }
 
+/*pagina nosotros*/
+.jerryCard{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    width: 200px;
+    height: 400px;
+    text-align: center;
+    margin-left: 5%;
+    grid-area: jerry;
+    
+}
+.jerrymamadoimg{
+    border: solid 4px #FEF972;
+    border-radius: 10%;
+    height: auto;
+    width: 100%;
+    max-width: 300px;
+}
+p{
+    font-family: "Outfit", sans-serif;
+    font-size: 1rem; 
+    color: #FEF972;
+}
+h2{
+    font-family: "Outfit", sans-serif;
+    font-size: 2.5rem;
+    color: #FEF972;
+}
+h3{
+    font-family: "Outfit", sans-serif;
+    font-size: 1.5rem;
+    color: #FEF972;
+}
+.nosotrosTexto{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 90%;
+    text-align: right;
+    margin-right: 20%;
+    grid-area: ntexto;
+}
+.nosotrosTexto h2{
+    font-size: 2rem;
+}
+.nosotrosTexto h3{
+    font-size: 2rem;
+    color: #FEF972;
+}
+#nosotrosContenido{
+    margin: auto;
+    display: grid;
+    align-items: flex-start;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+    height: 100vh;
+        padding: 0px;
+        margin: 0%;
+        grid-template-areas:
+        "jerry ntexto";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(1, 1fr);
+    
+}
+
+
+.material-icons{
+    margin-top: 0px;
+    margin-left: 5px;
+}
+
+.carritoicono{
+    margin-top: 20px;
+    height: 30px;
+    width: 30px;
+    border-radius: 5px;
+    background-color: #FEF972;
+    margin-left: 10px;
+    
+}
+
+
+/*pagina catalogo */
+
+.arribaProductos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulocatalogo{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+.catalogoTitulo{
+    font-size: larger;
+}
+catalogoSubTitulo{
+    display: flex;
+    margin-top: 0;
+}
+
+
+/* Id */
+
+/* ESTILOS RESPONSIVE */
+
+
+@media screen and (max-width: 768px){
+    #nosotrosContenido{
+        grid-template-areas:
+            "centrarbarra centrarbarra"
+            "ntexto ntexto"
+            "jerry jerry";
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+    }
+    .centrarbarra{
+        grid-area: centrarbarra;
+    }
+    .nosotrosTexto{
+        grid-area: ntexto;
+        margin-left: 15px;
+        margin-top: 15%;
+        height: 90%;
+        
+        margin-left: 20%;
+        text-align: center;
+        margin-right: 15%;
+        margin-bottom: 0%;
+    }
+}
+
+
+
 /* pies de pagina*/ 
 
 footer {
